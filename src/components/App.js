@@ -17,8 +17,8 @@ class App extends Component {
   buttonClickHandler() {
     this.setState({
       renderBall: true, //variable needed to be changed
-      posi: 0,
-      ballPosition: { left: "0px" }
+      posi: 5,
+      ballPosition: { left: this.state.posi+"px" }
     });
   }
   renderChoice() {
